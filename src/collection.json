@@ -1,0 +1,30 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "demo1": {
+      "description": "First demo - 建立檔案",
+      "factory": "./demo1/index#demo1"
+    },
+    "demo2": {
+      "description": "Second demo - 刪除檔案",
+      "factory": "./demo2/index#demo2"
+    },
+    "demo3": {
+      "description": "Third demo - 更新檔案",
+      "factory": "./demo3/index#demo3"
+    },
+    "demo4": {
+      "description": "Fourth demo - 搬移檔案並套用 template 方法",
+      "factory": "./demo4/index#demo4",
+      "schema": "./demo4/schema.json"
+    },
+    "demo5": {
+      "description": "Fourth demo - 新增 package 並執行 npm install",
+      "factory": "./demo4/index#demo5"
+    },
+    "ngtw2018": {
+      "description": "A blank schematic.",
+      "factory": "./ngtw2018/index#ngtw2018"
+    }
+  }
+}
